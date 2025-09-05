@@ -18,7 +18,7 @@ function App() {
           </h1>
 
           <p className="text-sm sm:text-base md:text-lg leading-relaxed text-justify mb-6 opacity-50">
-            Saya memiliki ketertarikan yang mendalam dalam dunia programming, khususnya dalam perancangan dan pengembangan sistem informasi berbasis web. Dengan pengalaman 1 tahun, saya terbiasa menganalisis kebutuhan pengguna, merancang arsitektur database, dan mengembangkan program yang efisien serta terstruktur.
+            Saya memiliki ketertarikan yang mendalam dalam dunia programming, khususnya dalam perancangan dan pengembangan sistem informasi berbasis web. Dengan pengalaman satu tahun Internship, saya terbiasa menganalisis kebutuhan pengguna, merancang arsitektur database, dan mengembangkan program yang efisien serta terstruktur.
           </p>
 
           {/* Kontak singkat */}
@@ -40,7 +40,7 @@ function App() {
             </a>
 
             <div className="flex items-center gap-2 text-sm sm:text-base opacity-70">
-              <i className="ri-map-pin-line"></i> Bekasi, Indonesia
+              <i className="ri-map-pin-line"></i> Tambun Selatan, Kabupaten Bekasi
             </div>
           </div>
 
@@ -57,17 +57,19 @@ function App() {
       <div className="tentang mt-32 py-10" id="tentang">
         <div className="xl:w-2/3 lg:w-3/4 w-full mx-auto p-7 bg-zinc-800 rounded-lg" data-aos="fade-up" data-aos-duration="1000">
           <p className="text-sm sm:text-base md:text-lg leading-relaxed text-justify mb-5">
-            Saya adalah lulusan Program Studi Sistem Informasi Industri Otomotif di Politeknik STMI Jakarta dengan pengalaman sebagai Full Stack Web Developer. Terampil dalam membangun aplikasi web menggunakan PHP Native maupun Framework Laravel, serta menguasai JavaScript. Memiliki kemampuan dalam UI/UX Design, manajemen basis data, analisis sistem, serta pemodelan sistem menggunakan Use Case, Activity, dan Sequence Diagram, termasuk desain serta pemodelan database.
+            Saya adalah lulusan Program Studi Sistem Informasi Industri Otomotif di Politeknik STMI Jakarta yang memiliki pengalaman Internship sebagai Full Stack Web Developer selama satu tahun. Terampil dalam membangun aplikasi web menggunakan PHP Native maupun Framework Laravel, serta menguasai JavaScript. Memiliki kemampuan dalam UI/UX Design, manajemen basis data, analisis sistem, serta pemodelan sistem menggunakan Use Case, Activity, dan Sequence Diagram, termasuk desain serta pemodelan database.
           </p>
 
           <p className="text-sm sm:text-base md:text-lg leading-relaxed text-justify">
-            Selain pengalaman akademis dan profesional, saya juga pernah menjabat sebagai Kepala Divisi PSDM HIMASIS, yang memperkuat kemampuan saya dalam kepemimpinan, manajemen tim, serta pengembangan sumber daya manusia.
+            Selain pengalaman akademis dan profesional, saya pernah menjabat sebagai Kepala Divisi PSDM HIMASIS dan Ketua Umum Rohis SMA 4 Tambun Selatan, yang memperkuat kemampuan saya dalam kepemimpinan, manajemen tim, serta pengembangan sumber daya manusia.
           </p>
         </div>
 
         {/* pengalaman */}
         <div className="pengalaman mt-22 py-10" id="pengalaman">
-          <h1 className="text-4xl font-bold mb-4 text-center" data-aos="fade-up" data-aos-duration="1000">Pengalaman</h1>
+          <h1 className="text-4xl font-bold mb-4 text-center" data-aos="fade-up" data-aos-duration="1000">
+            Pengalaman
+          </h1>
           <p className="text-base/loose text-center mb-10 opacity-50" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
             Berikut ini pengalaman saya baik di dunia profesional maupun organisasi
           </p>
@@ -92,7 +94,7 @@ function App() {
             </div>
           </div>
 
-          {/* Organisasi */}
+          {/* Organisasi Kuliah */}
           <div className="organisasi mt-16 xl:w-3/4 lg:w-4/5 w-full mx-auto grid gap-6">
             <h2 className="text-2xl font-bold mb-4" data-aos="fade-up" data-aos-duration="1000">Pengalaman Organisasi</h2>
 
@@ -115,7 +117,7 @@ function App() {
             {/* Staff Divisi Kewirausahaan */}
             <div className="p-6 bg-zinc-800 rounded-lg shadow-lg" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
               <div className="flex items-center gap-4 mb-3">
-                <img src={DataImage.ImageOrg} alt="Organisasi" className="w-12 h-12 rounded-md object-cover" loading="lazy" />
+                <img src={DataImage.ImageOrg1} alt="Organisasi" className="w-12 h-12 rounded-md object-cover" loading="lazy" />
                 <h3 className="text-xl font-semibold">Himpunan Mahasiswa Sistem Informasi (HIMASIS) – Jakarta, Indonesia</h3>
               </div>
               <span className="text-sm opacity-50">Mar 2023 – Feb 2024 | Staff – Divisi Kewirausahaan</span>
@@ -125,6 +127,25 @@ function App() {
               </ul>
             </div>
           </div>
+
+          {/* Organisasi SMA */}
+          <div className="organisasi-sma mt-16 xl:w-3/4 lg:w-4/5 w-full mx-auto grid gap-6">
+            <h2 className="text-2xl font-bold mb-4" data-aos="fade-up" data-aos-duration="1000">Pengalaman Organisasi SMA</h2>
+
+            <div className="p-6 bg-zinc-800 rounded-lg shadow-lg opacity-80" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+              <div className="flex items-center gap-4 mb-3">
+                <img src={DataImage.ImageSMA} alt="Organisasi SMA" className="w-12 h-12 rounded-md object-cover" loading="lazy" />
+                <h3 className="text-xl font-semibold">Rohis SMA 4 Tambun Selatan – Bekasi, Indonesia</h3>
+              </div>
+              <span className="text-sm opacity-50">2018 – 2020 | Ketua Umum & Staff Humas</span>
+              <ul className="list-disc list-inside mt-3 text-justify text-base sm:text-base md:text-lg lg:text-lg xl:text-xl leading-relaxed opacity-50">
+                <li>Memimpin dan melantik anggota baru, serta mengatur kegiatan organisasi</li>
+                <li>Menyelenggarakan event keagamaan seperti liqo, mabit, latihan hadroh/marawis, dan perayaan hari besar Islam</li>
+                <li>Berpartisipasi dalam kegiatan sosial dan lomba, termasuk juara LCTAI (Cerdas Cermat Islam) Tingkat Kabupaten tahun 2019</li>
+              </ul>
+            </div>
+          </div>
+
         </div>
         {/* pengalaman */}
 

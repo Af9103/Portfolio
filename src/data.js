@@ -2,9 +2,11 @@ import HeroImage from "/assets/ak.png";
 import ImageKecil from "/assets/awa.png";
 import ImageIntern from "/assets/inn.jpg";
 import ImageOrg from "/assets/awawaw.jpg";
+import ImageOrg1 from "/assets/foto1.jpg";
+import ImageSMA from "/assets/sma.jpg";
 
 const Image = {
-  HeroImage, ImageKecil, ImageIntern, ImageOrg
+  HeroImage, ImageKecil, ImageIntern, ImageOrg, ImageOrg1, ImageSMA
 };
 
 export default Image;
