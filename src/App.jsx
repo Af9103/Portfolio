@@ -1,6 +1,7 @@
 import DataImage from "./data";
 import { listTools, listProyek } from "./data";
 import Download from "./components/Download";
+import ReactTypingEffect from 'react-typing-effect';
 
 function App() {
 
@@ -12,18 +13,36 @@ function App() {
             <img src={DataImage.HeroImage} alt="Hero Image" className="w-10 rounded-md" loading="lazy" />
             <q>Satu baris kode, sejuta kemungkinan. ✨</q>
           </div>
-          <h1 className="text-5xl /tight font-bold mb-6">Hi, Saya Albin Favian</h1>
+          <h1 className="text-5xl font-bold mb-6 overflow-hidden border-r-4 border-violet-700 whitespace-nowrap animate-typing">
+            Hi, Saya Albin Favian
+          </h1>
+
           <p className="text-base/loose mb-6 opacity-50">Saya memiliki ketertarikan yang mendalam dalam dunia programming, khususnya dalam perancangan dan pengembangan sistem informasi berbasis web. Dengan pengalaman 1 tahun, saya terbiasa menganalisis kebutuhan pengguna, merancang arsitektur database, dan mengembangkan program yang efisien serta terstruktur.</p>
 
           {/* Kontak singkat */}
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-3">
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-3">
-              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=albinf341@gmail.com" target="_blank" className="flex items-center gap-2 text-base/loose opacity-70 hover:opacity-100">
+
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=albinf341@gmail.com"
+                target="_blank"
+                className="flex items-center gap-2 text-base/loose opacity-70 hover:opacity-100"
+              >
                 <i className="ri-mail-send-line"></i> albinf341@gmail.com
               </a>
-              <a href="https://wa.me/6281283265843" target="_blank" className="flex items-center gap-2 text-base/loose opacity-70 hover:opacity-100">
+
+              <a
+                href="https://wa.me/6281283265843"
+                target="_blank"
+                className="flex items-center gap-2 text-base/loose opacity-70 hover:opacity-100"
+              >
                 <i className="ri-whatsapp-line"></i> 0812-8326-5843
               </a>
+
+              <div className="flex items-center gap-2 text-base/loose opacity-70">
+                <i className="ri-map-pin-line"></i> Bekasi, Indonesia
+              </div>
+
             </div>
           </div>
 
@@ -107,7 +126,7 @@ function App() {
           <div className="tools-box mt-14 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
 
             {listTools.map((tool) => (
-              <div className="flex items-center gap-2 p-3 border border-zinc-600 rounded-md hover:bg-zinc-800 group" key={tool.id} data-aos="fade-up" data-aos-duration="1000" data-aos-delat={tool.dad}>
+              <div className="flex items-center gap-2 p-3 border border-zinc-600 rounded-md hover:bg-zinc-800 group" key={tool.id} data-aos="fade-up" data-aos-duration="1000" data-aos-delay={tool.dad}>
                 <img src={tool.gambar} alt="Tools Image" className="w-14 bg-zinc-800 p-1 group hover:bg-zinc-900" loading="lazy" />
                 <div>
                   <h4 className="font-bold">{tool.nama}</h4>
@@ -124,7 +143,7 @@ function App() {
       {/* proyek */}
       <div className="proyek mt-22 py-10" id="proyek">
         <h1 className="text-center text-4xl font-bold mb-2" data-aos="fade-up" data-aos-duration="1000">Proyek</h1>
-        <p className="text-base/loose text-center opacity-50" data-aos="fade-up" data-aos-duration="1000" data-aos-delat="300">Berikut ini beberapa proyek yang telah saya buat:</p>
+        <p className="text-base/loose text-center opacity-50" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Berikut ini beberapa proyek yang telah saya buat:</p>
         <div className="proyek-box mt-14 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
           {listProyek.map((proyek) => (
             <div key={proyek.id} className="p-4 bg-zinc-800 rounded-md" data-aos="fade-up" data-aos-duration="1000" data-aos-delay={proyek.dad}>
@@ -137,10 +156,10 @@ function App() {
                     <p className="py-1 px-3 border border-zinc-500 bg-zinc-600 rounded-md font-semibold" key={index}>{tool}</p>
                   ))}
                 </div>
-                <div className="mt-8 text-center">
-                  <a href="#" className="bg-violet-700 p-3 rounded-lg block border border-zinc-600 hover:bg-violet-600">Lihat website</a>
-                </div>
               </div>
+              {/* <div className="mt-8 text-center">
+                <a href="#" className="bg-violet-700 p-3 rounded-lg block border border-zinc-600 hover:bg-violet-600">Lihat website</a>
+              </div> */}
             </div>
           ))}
         </div>
@@ -150,7 +169,6 @@ function App() {
       {/* kontak */}
       <div className="kontak mt-22 sm:p-10 p-0" id="kontak">
         <h1 className="text-4xl mb-2 font-bold text-center" data-aos="fade-up" data-aos-duration="1000">Kontak</h1>
-        <p className="text-base/loose text-center mb-2 opacity-50">Bekasi, Indonesia</p> {/* Lokasi ditambahkan */}
         <p className="text-base/loose text-center mb-10 opacity-50" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Mari terhubung dengan saya</p>
         <form action="https://formsubmit.co/albinf341@gmail.com" method="POST" className="bg-zinc-800 p-10 sm:w-fit w-full mx-auto rounded-md" autoComplete="off" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
           <div className="flex flex-col gap-6">
