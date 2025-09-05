@@ -14,24 +14,33 @@ function App() {
           </div>
           <h1 className="text-5xl /tight font-bold mb-6">Hi, Saya Albin Favian</h1>
           <p className="text-base/loose mb-6 opacity-50">Saya memiliki ketertarikan yang mendalam dalam dunia programming, khususnya dalam perancangan dan pengembangan sistem informasi berbasis web. Dengan pengalaman 1 tahun, saya terbiasa menganalisis kebutuhan pengguna, merancang arsitektur database, dan mengembangkan program yang efisien serta terstruktur.</p>
+
+          {/* Kontak singkat */}
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-3">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-3">
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=albinf341@gmail.com" target="_blank" className="flex items-center gap-2 text-base/loose opacity-70 hover:opacity-100">
+                <i className="ri-mail-send-line"></i> albinf341@gmail.com
+              </a>
+              <a href="https://wa.me/6281283265843" target="_blank" className="flex items-center gap-2 text-base/loose opacity-70 hover:opacity-100">
+                <i className="ri-whatsapp-line"></i> 0812-8326-5843
+              </a>
+            </div>
+          </div>
+
           <div className="flex items-center sm:gap-4 gap-2">
             <Download />
-            <a href="#" className="bg-zinc-700 p-4 rounded-2xl hover:bg-zinc-600">Proyek Saya <i className="ri-arrow-down-line ri-lg"></i></a>
+            <a href="#proyek" className="bg-zinc-700 p-4 rounded-2xl hover:bg-zinc-600">Proyek Saya <i className="ri-arrow-down-line ri-lg"></i></a>
           </div>
         </div>
         <img src={DataImage.HeroImage} alt="Hero Image" className='w-[500px] md:ml-auto animate__animated animate__fadeInUp animate__delay-2s' loading="lazy" />
       </div>
 
       {/* tentang */}
-      <div className="tentang mt-22 py-10" id="tentang">
+      <div className="tentang mt-32 py-10" id="tentang">
         <div className="xl:w-2/3 lg:w-3/4 w-full mx-auto p-7 bg-zinc-800 rounded-lg" data-aos="fade-up" data-aos-duration="1000">
           <img src={DataImage.HeroImage} alt="Image" className="w-12 rounded-md mb-10 sm:hidden" loading="lazy" />
-          <p className="text-base/loose mb-10">Saya adalah lulusan Program Studi Sistem Informasi Industri Otomotif di Politeknik STMI Jakarta dengan pengalaman sebagai Full Stack Web Developer. Terampil dalam membangun aplikasi web menggunakan PHP Native maupun Framework Laravel, serta menguasai JavaScript. Memiliki kemampuan dalam UI/UX Design, manajemen basis data, analisis sistem, serta pemodelan sistem menggunakan Use Case, Activity, dan Sequence Diagram, termasuk desain serta pemodelan database.</p>
-          <p className="text-base/loose mb-10">Selain pengalaman akademis dan profesional, saya juga pernah menjabat sebagai Kepala Divisi PSDM HIMASIS, yang memperkuat kemampuan saya dalam kepemimpinan, manajemen tim, serta pengembangan sumber daya manusia.</p>
-          <div className="flex items-center justify-between">
-            <img src={DataImage.HeroImage} alt="Image" className="w-12 rounded-md sm:block hidden" loading="lazy" />
-
-          </div>
+          <p className="text-base/loose mb-5">Saya adalah lulusan Program Studi Sistem Informasi Industri Otomotif di Politeknik STMI Jakarta dengan pengalaman sebagai Full Stack Web Developer. Terampil dalam membangun aplikasi web menggunakan PHP Native maupun Framework Laravel, serta menguasai JavaScript. Memiliki kemampuan dalam UI/UX Design, manajemen basis data, analisis sistem, serta pemodelan sistem menggunakan Use Case, Activity, dan Sequence Diagram, termasuk desain serta pemodelan database.</p>
+          <p className="text-base/loose">Selain pengalaman akademis dan profesional, saya juga pernah menjabat sebagai Kepala Divisi PSDM HIMASIS, yang memperkuat kemampuan saya dalam kepemimpinan, manajemen tim, serta pengembangan sumber daya manusia.</p>
         </div>
 
         {/* pengalaman */}
@@ -141,6 +150,7 @@ function App() {
       {/* kontak */}
       <div className="kontak mt-22 sm:p-10 p-0" id="kontak">
         <h1 className="text-4xl mb-2 font-bold text-center" data-aos="fade-up" data-aos-duration="1000">Kontak</h1>
+        <p className="text-base/loose text-center mb-2 opacity-50">Bekasi, Indonesia</p> {/* Lokasi ditambahkan */}
         <p className="text-base/loose text-center mb-10 opacity-50" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Mari terhubung dengan saya</p>
         <form action="https://formsubmit.co/albinf341@gmail.com" method="POST" className="bg-zinc-800 p-10 sm:w-fit w-full mx-auto rounded-md" autoComplete="off" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
           <div className="flex flex-col gap-6">
