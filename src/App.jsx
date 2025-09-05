@@ -23,7 +23,7 @@ function App() {
       </div>
 
       {/* tentang */}
-      <div className="tentang mt-32 py-10" id="tentang">
+      <div className="tentang mt-22 py-10" id="tentang">
         <div className="xl:w-2/3 lg:w-3/4 w-full mx-auto p-7 bg-zinc-800 rounded-lg" data-aos="fade-up" data-aos-duration="1000">
           <img src={DataImage.HeroImage} alt="Image" className="w-12 rounded-md mb-10 sm:hidden" loading="lazy" />
           <p className="text-base/loose mb-10">Saya adalah lulusan Program Studi Sistem Informasi Industri Otomotif di Politeknik STMI Jakarta dengan pengalaman sebagai Full Stack Web Developer. Terampil dalam membangun aplikasi web menggunakan PHP Native maupun Framework Laravel, serta menguasai JavaScript. Memiliki kemampuan dalam UI/UX Design, manajemen basis data, analisis sistem, serta pemodelan sistem menggunakan Use Case, Activity, dan Sequence Diagram, termasuk desain serta pemodelan database.</p>
@@ -34,10 +34,67 @@ function App() {
           </div>
         </div>
 
+        {/* pengalaman */}
+        <div className="pengalaman mt-22 py-10" id="pengalaman">
+          <h1 className="text-4xl font-bold mb-4 text-center" data-aos="fade-up" data-aos-duration="1000">Pengalaman</h1>
+          <p className="text-base/loose text-center mb-10 opacity-50" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+            Berikut ini pengalaman saya baik di dunia profesional maupun organisasi
+          </p>
 
-        <div className="tools mt-32">
-          <h1 className="text-4xl/snug font-bold mb-4" data-aos="fade-up" data-aos-duration="1000">Tools yang dipakai</h1>
-          <p className="xl:w-2/5 lg:w-2/4 md:w-2/3 sm:w-3/4 w-full text-base/loose opacity-50" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Berikut ini beberapa tools yang biasa saya pakai</p>
+          {/* Internship */}
+          <div className="internship mt-10 xl:w-3/4 lg:w-4/5 w-full mx-auto grid gap-6">
+            <h2 className="text-2xl font-bold mb-4" data-aos="fade-up" data-aos-duration="1000">Pengalaman Internship</h2>
+            <div className="p-6 bg-zinc-800 rounded-lg shadow-lg" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+              <h3 className="text-xl font-semibold">PT Kayaba Indonesia – Cikarang, Indonesia</h3>
+              <span className="text-sm opacity-50">Feb 2024 – Jan 2025 | Full Stack Web Developer</span>
+              <ul className="list-disc list-inside mt-3 text-base/loose opacity-70">
+                <li>Mengembangkan Sistem Informasi Berbasis Web (Full Stack Developer)</li>
+                <li>Melakukan review mingguan bersama pengguna untuk mengevaluasi progres dan menyesuaikan fitur sistem sesuai kebutuhan</li>
+                <li>Melaksanakan sosialisasi sistem kepada end user melalui presentasi</li>
+                <li>Membuat panduan penggunaan dalam bentuk dokumentasi PDF dan video tutorial untuk membantu pengguna memahami dan mengoperasikan sistem dengan efektif</li>
+                <li>Melaksanakan kegiatan stock opname sebagai anggota tim filling, dengan tugas mengelola dan menyusun formulir berdasarkan nomor, serta memastikan kesesuaian data fisik dan sistem</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Organisasi */}
+          <div className="organisasi mt-16 xl:w-3/4 lg:w-4/5 w-full mx-auto grid gap-6">
+            <h2 className="text-2xl font-bold mb-4" data-aos="fade-up" data-aos-duration="1000">Pengalaman Organisasi</h2>
+
+            {/* Kepala Divisi */}
+            <div className="p-6 bg-zinc-800 rounded-lg shadow-lg" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+              <h3 className="text-xl font-semibold">Himpunan Mahasiswa Sistem Informasi (HIMASIS) – Jakarta, Indonesia</h3>
+              <span className="text-sm opacity-50">Feb 2024 – Feb 2025 | Kepala Divisi – Pengembangan Sumber Daya Manusia</span>
+              <ul className="list-disc list-inside mt-3 text-base/loose opacity-70">
+                <li>Memimpin proses rekrutmen anggota baru</li>
+                <li>Berhasil melaksanakan program magang untuk calon penerus HIMASIS, dengan 70% peserta magang menjadi anggota tetap</li>
+                <li>Menyelenggarakan acara Buka Puasa Bersama anggota dan alumni, serta memimpin program sosial “HIMASIS Berbagi” untuk mendukung masyarakat sekitar selama bulan Ramadan</li>
+                <li>Mengevaluasi kinerja anggota melalui laporan penilaian terstruktur, yang berkontribusi pada peningkatan efektivitas organisasi</li>
+                <li>Melaksanakan fungsi perencanaan, pengorganisasian, pelaksanaan, dan pengawasan seluruh kegiatan di Divisi Pengembangan Sumber Daya Manusia</li>
+              </ul>
+            </div>
+
+            {/* Staff Divisi Kewirausahaan */}
+            <div className="p-6 bg-zinc-800 rounded-lg shadow-lg" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+              <h3 className="text-xl font-semibold">Himpunan Mahasiswa Sistem Informasi (HIMASIS) – Jakarta, Indonesia</h3>
+              <span className="text-sm opacity-50">Mar 2023 – Feb 2024 | Staff – Divisi Kewirausahaan</span>
+              <ul className="list-disc list-inside mt-3 text-base/loose opacity-70">
+                <li>Mendesain pamflet dan materi promosi untuk program kewirausahaan</li>
+                <li>Merencanakan dan menjual produk HIMASIS seperti merchandise dan makanan untuk mendukung kegiatan HIMASIS</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        {/* pengalaman */}
+
+
+        <div className="tools mt-22" id="tools">
+          <h1 className="text-4xl/snug font-bold mb-4 text-center" data-aos="fade-up" data-aos-duration="1000">
+            Tools yang dipakai
+          </h1>
+          <p className="xl:w-2/5 lg:w-2/4 md:w-2/3 sm:w-3/4 w-full text-base/loose opacity-50 text-center mx-auto" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+            Berikut ini beberapa tools yang biasa saya pakai
+          </p>
           <div className="tools-box mt-14 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
 
             {listTools.map((tool) => (
@@ -56,7 +113,7 @@ function App() {
       {/* tentang */}
 
       {/* proyek */}
-      <div className="proyek mt-32 py-10" id="proyek">
+      <div className="proyek mt-22 py-10" id="proyek">
         <h1 className="text-center text-4xl font-bold mb-2" data-aos="fade-up" data-aos-duration="1000">Proyek</h1>
         <p className="text-base/loose text-center opacity-50" data-aos="fade-up" data-aos-duration="1000" data-aos-delat="300">Berikut ini beberapa proyek yang telah saya buat:</p>
         <div className="proyek-box mt-14 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
@@ -82,7 +139,7 @@ function App() {
       {/* proyek */}
 
       {/* kontak */}
-      <div className="kontak mt-32 sm:p-10 p-0" id="kontak">
+      <div className="kontak mt-22 sm:p-10 p-0" id="kontak">
         <h1 className="text-4xl mb-2 font-bold text-center" data-aos="fade-up" data-aos-duration="1000">Kontak</h1>
         <p className="text-base/loose text-center mb-10 opacity-50" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Mari terhubung dengan saya</p>
         <form action="https://formsubmit.co/albinf341@gmail.com" method="POST" className="bg-zinc-800 p-10 sm:w-fit w-full mx-auto rounded-md" autoComplete="off" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
