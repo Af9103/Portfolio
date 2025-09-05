@@ -10,7 +10,7 @@ function App() {
         <div className="animate__animated animate__fadeInUp animate__delay-1-5s">
           <div className="flex items-center gap-3 mb-6 bg-zinc-800 w-fit p-4 rounded-2xl">
             <img src={DataImage.HeroImage} alt="Hero Image" className="w-10 rounded-md" loading="lazy" />
-            <q>Kode yang indah, lahir dari ketekunan.😊</q>
+            <q>Satu baris kode, sejuta kemungkinan. ✨</q>
           </div>
           <h1 className="text-5xl /tight font-bold mb-6">Hi, Saya Albin Favian</h1>
           <p className="text-base/loose mb-6 opacity-50">Saya memiliki ketertarikan yang mendalam dalam dunia programming, khususnya dalam perancangan dan pengembangan sistem informasi berbasis web. Dengan pengalaman 1 tahun, saya terbiasa menganalisis kebutuhan pengguna, merancang arsitektur database, dan mengembangkan program yang efisien serta terstruktur.</p>
