@@ -10,7 +10,7 @@ function App() {
       <div className="hero grid md:grid-cols-2 items-center pt-10 xl:gap-0 gap-6 grid-cols-1">
         <div className="animate__animated animate__fadeInUp animate__delay-1-5s">
           <div className="flex items-center gap-3 mb-6 bg-zinc-800 w-fit p-4 rounded-2xl">
-            <img src={DataImage.HeroImage} alt="Hero Image" className="w-10 rounded-md" loading="lazy" />
+            <img src={DataImage.ImageKecil} alt="Hero Image" className="w-10 rounded-md" loading="lazy" />
             <q>Satu baris kode, sejuta kemungkinan. ✨</q>
           </div>
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 overflow-hidden border-r-4 border-violet-700 whitespace-nowrap max-w-full sm:max-w-[90vw] animate-typing">
@@ -56,7 +56,6 @@ function App() {
       {/* tentang */}
       <div className="tentang mt-32 py-10" id="tentang">
         <div className="xl:w-2/3 lg:w-3/4 w-full mx-auto p-7 bg-zinc-800 rounded-lg" data-aos="fade-up" data-aos-duration="1000">
-          <img src={DataImage.HeroImage} alt="Image" className="w-12 rounded-md mb-10 sm:hidden" loading="lazy" />
           <p className="text-sm sm:text-base md:text-lg leading-relaxed text-justify mb-5">
             Saya adalah lulusan Program Studi Sistem Informasi Industri Otomotif di Politeknik STMI Jakarta dengan pengalaman sebagai Full Stack Web Developer. Terampil dalam membangun aplikasi web menggunakan PHP Native maupun Framework Laravel, serta menguasai JavaScript. Memiliki kemampuan dalam UI/UX Design, manajemen basis data, analisis sistem, serta pemodelan sistem menggunakan Use Case, Activity, dan Sequence Diagram, termasuk desain serta pemodelan database.
           </p>
@@ -76,10 +75,14 @@ function App() {
           {/* Internship */}
           <div className="internship mt-10 xl:w-3/4 lg:w-4/5 w-full mx-auto grid gap-6">
             <h2 className="text-2xl font-bold mb-4" data-aos="fade-up" data-aos-duration="1000">Pengalaman Internship</h2>
+
             <div className="p-6 bg-zinc-800 rounded-lg shadow-lg" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-              <h3 className="text-xl font-semibold">PT Kayaba Indonesia – Cikarang, Indonesia</h3>
+              <div className="flex items-center gap-4 mb-3">
+                <img src={DataImage.ImageIntern} alt="Internship" className="w-12 h-12 rounded-md object-cover" loading="lazy" />
+                <h3 className="text-xl font-semibold">PT Kayaba Indonesia – Cikarang, Indonesia</h3>
+              </div>
               <span className="text-sm opacity-50">Feb 2024 – Jan 2025 | Full Stack Web Developer</span>
-              <ul className="list-disc list-inside mt-3 text-base/loose opacity-70">
+              <ul className="list-disc list-inside mt-3 text-justify text-base sm:text-base md:text-lg lg:text-lg xl:text-xl leading-relaxed opacity-70">
                 <li>Mengembangkan Sistem Informasi Berbasis Web (Full Stack Developer)</li>
                 <li>Melakukan review mingguan bersama pengguna untuk mengevaluasi progres dan menyesuaikan fitur sistem sesuai kebutuhan</li>
                 <li>Melaksanakan sosialisasi sistem kepada end user melalui presentasi</li>
@@ -95,9 +98,12 @@ function App() {
 
             {/* Kepala Divisi */}
             <div className="p-6 bg-zinc-800 rounded-lg shadow-lg" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-              <h3 className="text-xl font-semibold">Himpunan Mahasiswa Sistem Informasi (HIMASIS) – Jakarta, Indonesia</h3>
+              <div className="flex items-center gap-4 mb-3">
+                <img src={DataImage.ImageOrg} alt="Organisasi" className="w-12 h-12 rounded-md object-cover" loading="lazy" />
+                <h3 className="text-xl font-semibold">Himpunan Mahasiswa Sistem Informasi (HIMASIS) – Jakarta, Indonesia</h3>
+              </div>
               <span className="text-sm opacity-50">Feb 2024 – Feb 2025 | Kepala Divisi – Pengembangan Sumber Daya Manusia</span>
-              <ul className="list-disc list-inside mt-3 text-base/loose opacity-70">
+              <ul className="list-disc list-inside mt-3 text-justify text-base sm:text-base md:text-lg lg:text-lg xl:text-xl leading-relaxed opacity-70">
                 <li>Memimpin proses rekrutmen anggota baru</li>
                 <li>Berhasil melaksanakan program magang untuk calon penerus HIMASIS, dengan 70% peserta magang menjadi anggota tetap</li>
                 <li>Menyelenggarakan acara Buka Puasa Bersama anggota dan alumni, serta memimpin program sosial “HIMASIS Berbagi” untuk mendukung masyarakat sekitar selama bulan Ramadan</li>
@@ -108,9 +114,12 @@ function App() {
 
             {/* Staff Divisi Kewirausahaan */}
             <div className="p-6 bg-zinc-800 rounded-lg shadow-lg" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-              <h3 className="text-xl font-semibold">Himpunan Mahasiswa Sistem Informasi (HIMASIS) – Jakarta, Indonesia</h3>
+              <div className="flex items-center gap-4 mb-3">
+                <img src={DataImage.ImageOrg} alt="Organisasi" className="w-12 h-12 rounded-md object-cover" loading="lazy" />
+                <h3 className="text-xl font-semibold">Himpunan Mahasiswa Sistem Informasi (HIMASIS) – Jakarta, Indonesia</h3>
+              </div>
               <span className="text-sm opacity-50">Mar 2023 – Feb 2024 | Staff – Divisi Kewirausahaan</span>
-              <ul className="list-disc list-inside mt-3 text-base/loose opacity-70">
+              <ul className="list-disc list-inside mt-3 text-justify text-base sm:text-base md:text-lg lg:text-lg xl:text-xl leading-relaxed opacity-70">
                 <li>Mendesain pamflet dan materi promosi untuk program kewirausahaan</li>
                 <li>Merencanakan dan menjual produk HIMASIS seperti merchandise dan makanan untuk mendukung kegiatan HIMASIS</li>
               </ul>
@@ -150,11 +159,11 @@ function App() {
         <p className="text-base/loose text-center opacity-50" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Berikut ini beberapa proyek yang telah saya buat:</p>
         <div className="proyek-box mt-14 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
           {listProyek.map((proyek) => (
-            <div key={proyek.id} className="p-4 bg-zinc-800 rounded-md" data-aos="fade-up" data-aos-duration="1000" data-aos-delay={proyek.dad}>
+            <div key={proyek.id} className="p-4 bg-zinc-800 rounded-md overflow-visible group" data-aos="fade-up" data-aos-duration="1000" data-aos-delay={proyek.dad}>
               <img src={proyek.gambar} alt="proyek image" loading="lazy" />
               <div>
                 <h1 className="text-xl font-bold my-4">{proyek.nama}</h1>
-                <p className="text-base/loose mb-4">{proyek.desk}</p>
+                <p className="text-justify text-base/loose mb-4">{proyek.desk}</p>
                 <div className="flex flex-wrap gap-2">
                   {proyek.tools.map((tool, index) => (
                     <p className="py-1 px-3 border border-zinc-500 bg-zinc-600 rounded-md font-semibold" key={index}>{tool}</p>
