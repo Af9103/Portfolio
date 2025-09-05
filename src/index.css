@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@layer base {
+    body {
+        font-family: "Poppins", sans-serif;
+    }
+
+    .animate__delay-1-5s {
+        animation-delay: 1.5s !important;
+    }
+
+    .animate__delay-2-5s {
+        animation-delay: 2.5s !important;
+    }
+
+}
