@@ -13,38 +13,37 @@ function App() {
             <img src={DataImage.HeroImage} alt="Hero Image" className="w-10 rounded-md" loading="lazy" />
             <q>Satu baris kode, sejuta kemungkinan. ✨</q>
           </div>
-          <h1 className="text-5xl font-bold mb-6 overflow-hidden border-r-4 border-violet-700 whitespace-nowrap animate-typing">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 overflow-hidden border-r-4 border-violet-700 whitespace-nowrap max-w-full sm:max-w-[90vw] animate-typing">
             Hi, Saya Albin Favian
           </h1>
 
-          <p className="text-base/loose mb-6 opacity-50">Saya memiliki ketertarikan yang mendalam dalam dunia programming, khususnya dalam perancangan dan pengembangan sistem informasi berbasis web. Dengan pengalaman 1 tahun, saya terbiasa menganalisis kebutuhan pengguna, merancang arsitektur database, dan mengembangkan program yang efisien serta terstruktur.</p>
+          <p className="text-sm sm:text-base md:text-lg leading-relaxed text-justify mb-6 opacity-50">
+            Saya memiliki ketertarikan yang mendalam dalam dunia programming, khususnya dalam perancangan dan pengembangan sistem informasi berbasis web. Dengan pengalaman 1 tahun, saya terbiasa menganalisis kebutuhan pengguna, merancang arsitektur database, dan mengembangkan program yang efisien serta terstruktur.
+          </p>
 
           {/* Kontak singkat */}
-          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-3">
-            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-3">
+          <div className="flex flex-col sm:flex-row flex-wrap items-start sm:items-center gap-2 sm:gap-4 mb-3">
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=albinf341@gmail.com"
+              target="_blank"
+              className="flex items-center gap-2 text-sm sm:text-base opacity-70 hover:opacity-100"
+            >
+              <i className="ri-mail-send-line"></i> albinf341@gmail.com
+            </a>
 
-              <a
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=albinf341@gmail.com"
-                target="_blank"
-                className="flex items-center gap-2 text-base/loose opacity-70 hover:opacity-100"
-              >
-                <i className="ri-mail-send-line"></i> albinf341@gmail.com
-              </a>
+            <a
+              href="https://wa.me/6281283265843"
+              target="_blank"
+              className="flex items-center gap-2 text-sm sm:text-base opacity-70 hover:opacity-100"
+            >
+              <i className="ri-whatsapp-line"></i> 0812-8326-5843
+            </a>
 
-              <a
-                href="https://wa.me/6281283265843"
-                target="_blank"
-                className="flex items-center gap-2 text-base/loose opacity-70 hover:opacity-100"
-              >
-                <i className="ri-whatsapp-line"></i> 0812-8326-5843
-              </a>
-
-              <div className="flex items-center gap-2 text-base/loose opacity-70">
-                <i className="ri-map-pin-line"></i> Bekasi, Indonesia
-              </div>
-
+            <div className="flex items-center gap-2 text-sm sm:text-base opacity-70">
+              <i className="ri-map-pin-line"></i> Bekasi, Indonesia
             </div>
           </div>
+
 
           <div className="flex items-center sm:gap-4 gap-2">
             <Download />
@@ -58,8 +57,13 @@ function App() {
       <div className="tentang mt-32 py-10" id="tentang">
         <div className="xl:w-2/3 lg:w-3/4 w-full mx-auto p-7 bg-zinc-800 rounded-lg" data-aos="fade-up" data-aos-duration="1000">
           <img src={DataImage.HeroImage} alt="Image" className="w-12 rounded-md mb-10 sm:hidden" loading="lazy" />
-          <p className="text-base/loose mb-5">Saya adalah lulusan Program Studi Sistem Informasi Industri Otomotif di Politeknik STMI Jakarta dengan pengalaman sebagai Full Stack Web Developer. Terampil dalam membangun aplikasi web menggunakan PHP Native maupun Framework Laravel, serta menguasai JavaScript. Memiliki kemampuan dalam UI/UX Design, manajemen basis data, analisis sistem, serta pemodelan sistem menggunakan Use Case, Activity, dan Sequence Diagram, termasuk desain serta pemodelan database.</p>
-          <p className="text-base/loose">Selain pengalaman akademis dan profesional, saya juga pernah menjabat sebagai Kepala Divisi PSDM HIMASIS, yang memperkuat kemampuan saya dalam kepemimpinan, manajemen tim, serta pengembangan sumber daya manusia.</p>
+          <p className="text-sm sm:text-base md:text-lg leading-relaxed text-justify mb-5">
+            Saya adalah lulusan Program Studi Sistem Informasi Industri Otomotif di Politeknik STMI Jakarta dengan pengalaman sebagai Full Stack Web Developer. Terampil dalam membangun aplikasi web menggunakan PHP Native maupun Framework Laravel, serta menguasai JavaScript. Memiliki kemampuan dalam UI/UX Design, manajemen basis data, analisis sistem, serta pemodelan sistem menggunakan Use Case, Activity, dan Sequence Diagram, termasuk desain serta pemodelan database.
+          </p>
+
+          <p className="text-sm sm:text-base md:text-lg leading-relaxed text-justify">
+            Selain pengalaman akademis dan profesional, saya juga pernah menjabat sebagai Kepala Divisi PSDM HIMASIS, yang memperkuat kemampuan saya dalam kepemimpinan, manajemen tim, serta pengembangan sumber daya manusia.
+          </p>
         </div>
 
         {/* pengalaman */}

@@ -44,6 +44,7 @@
         animation:
             typing 3s steps(22) 1.5s forwards,
             blink 0.75s step-end 5 forwards 1.5s;
-        /* blink hanya 5 iterasi (~6 detik) */
+        /* iterasi 5 (~6 detik) */
     }
+
 }

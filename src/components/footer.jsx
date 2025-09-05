@@ -6,7 +6,7 @@ const footer = () => {
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 items-center">
                         {/* Brand */}
                         <div className="text-center md:text-left">
-                            <h1 className="text-xl sm:text-2xl font-bold mb-2">Portofolio</h1>
+                            <h1 className="text-xl sm:text-2xl font-bold mb-2">Portfolio</h1>
                             <p className="text-xs sm:text-sm opacity-60 leading-relaxed">
                                 Showcase proyek dan pengalaman saya di bidang Web Development & UI/UX.
                             </p>
