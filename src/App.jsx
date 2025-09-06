@@ -1,7 +1,6 @@
 import DataImage from "./data";
 import { listTools, listProyek } from "./data";
 import Download from "./components/Download";
-import ReactTypingEffect from 'react-typing-effect';
 
 function App() {
 
@@ -61,7 +60,7 @@ function App() {
           </p>
 
           <p className="text-sm sm:text-base md:text-lg leading-relaxed text-justify">
-            Selain pengalaman akademis dan profesional, saya pernah menjabat sebagai Kepala Divisi PSDM HIMASIS dan Ketua Umum Rohis SMA 4 Tambun Selatan, yang memperkuat kemampuan saya dalam kepemimpinan, manajemen tim, serta pengembangan sumber daya manusia.
+            Selain pengalaman akademis dan profesional, saya pernah menjabat sebagai Kepala Divisi PSDM HIMASIS dan Ketua Umum Rohis SMAN 4 Tambun Selatan, yang memperkuat kemampuan saya dalam kepemimpinan, manajemen tim, serta pengembangan sumber daya manusia.
           </p>
         </div>
 
@@ -135,7 +134,7 @@ function App() {
             <div className="p-6 bg-zinc-800 rounded-lg shadow-lg opacity-80" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
               <div className="flex items-center gap-4 mb-3">
                 <img src={DataImage.ImageSMA} alt="Organisasi SMA" className="w-12 h-12 rounded-md object-cover" loading="lazy" />
-                <h3 className="text-xl font-semibold">Rohis SMA 4 Tambun Selatan – Bekasi, Indonesia</h3>
+                <h3 className="text-xl font-semibold">Rohis SMAN 4 Tambun Selatan – Bekasi, Indonesia</h3>
               </div>
               <span className="text-sm opacity-50">2018 – 2020 | Ketua Umum & Staff Humas</span>
               <ul className="list-disc list-inside mt-3 text-justify text-base sm:text-base md:text-lg lg:text-lg xl:text-xl leading-relaxed opacity-50">

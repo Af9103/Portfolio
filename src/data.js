@@ -1,4 +1,4 @@
-import HeroImage from "/assets/ak.png";
+import HeroImage from "/assets/lahoke.png";
 import ImageKecil from "/assets/awa.png";
 import ImageIntern from "/assets/inn.jpg";
 import ImageOrg from "/assets/awawaw.jpg";
