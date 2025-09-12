@@ -143,97 +143,106 @@ export const listTools = [
   },
 ];
 
-import Proyek1 from "/assets/proyek/pk.png";
-import Proyek2 from "/assets/proyek/prod.png";
-import Proyek3 from "/assets/proyek/stok.jpg";
-import Proyek4 from "/assets/proyek/mutasi.jpg";
-import Proyek5 from "/assets/proyek/mps.jpg";
-import Proyek6 from "/assets/proyek/nqr.png";
-import Proyek7 from "/assets/proyek/blog.png";
-import Proyek8 from "/assets/proyek/predik.jpg";
-import Proyek9 from "/assets/proyek/ecom.png";
-import Proyek10 from "/assets/proyek/dokter.png";
+import Proyek1 from "/assets/proyek/penjualan.jpg";
+import Proyek2 from "/assets/proyek/pk.png";
+import Proyek3 from "/assets/proyek/prod.png";
+import Proyek4 from "/assets/proyek/stok.jpg";
+import Proyek5 from "/assets/proyek/mutasi.jpg";
+import Proyek6 from "/assets/proyek/mps.jpg";
+import Proyek7 from "/assets/proyek/nqr.png";
+import Proyek8 from "/assets/proyek/blog.png";
+import Proyek9 from "/assets/proyek/predik.jpg";
+import Proyek10 from "/assets/proyek/ecom.png";
+import Proyek11 from "/assets/proyek/dokter.png";
 
 export const listProyek = [
   {
     id: 1,
     gambar: Proyek1,
-    nama: "Sistem Informasi Penilaian Kinerja - 2025",
-    desk: "Sistem web untuk menilai kinerja pegawai dan memberikan rekomendasi promosi atau pengangkatan menggunakan metode Simple Additive Weighting (SAW).",
-    tools: ["HTML", "CSS", "Javascript", "Laravel", "MySQL"],
+    nama: "Sistem Manajemen Penjualan - 2025",
+    desk: "Aplikasi berbasis web yang digunakan untuk mengelola proses penjualan mulai dari pencatatan transaksi, pengelolaan data pelanggan.",
+    tools: ["ReactJS", "Tailwind CSS", "Laravel", "MySQL"],
     dad: "200",
   },
   {
     id: 2,
     gambar: Proyek2,
-    nama: "Sistem Informasi Laporan Produksi - 2025",
-    desk: "Sistem yang digunakan untuk Mencatat hasil produksi, Memantau produksi harian dan memilih part terbaik menggunakan metode Simple Additive Weighting (SAW).",
+    nama: "Sistem Informasi Penilaian Kinerja - 2025",
+    desk: "Sistem web untuk menilai kinerja pegawai dan memberikan rekomendasi promosi atau pengangkatan menggunakan metode Simple Additive Weighting (SAW).",
     tools: ["HTML", "CSS", "Javascript", "Laravel", "MySQL"],
     dad: "300",
   },
   {
     id: 3,
     gambar: Proyek3,
-    nama: "Sistem Informasi Manajemen Stok - 2025",
-    desk: "Sistem yang digunakan untuk Mengelola stok barang, memantau masuk-keluar, dan mencegah kekurangan atau kelebihan persediaan. Sistem ini juga memudahkan pemantauan stok secara real-time.",
+    nama: "Sistem Informasi Laporan Produksi - 2025",
+    desk: "Sistem yang digunakan untuk Mencatat hasil produksi, Memantau produksi harian dan memilih part terbaik menggunakan metode Simple Additive Weighting (SAW).",
     tools: ["HTML", "CSS", "Javascript", "Laravel", "MySQL"],
     dad: "400",
   },
   {
     id: 4,
     gambar: Proyek4,
-    nama: "Sistem Informasi Permohonan Mutasi - 2024",
-    desk: "Sistem ini digunakan untuk mengelola proses permohonan mutasi karyawan secara digital, mulai dari pengajuan, persetujuan, hingga pemantauan status mutasi.",
-    tools: ["HTML", "CSS", "Javascript", "PHP", "MySQL"],
+    nama: "Sistem Informasi Manajemen Stok - 2025",
+    desk: "Sistem yang digunakan untuk Mengelola stok barang, memantau masuk-keluar, dan mencegah kekurangan atau kelebihan persediaan. Sistem ini juga memudahkan pemantauan stok secara real-time.",
+    tools: ["HTML", "CSS", "Javascript", "Laravel", "MySQL"],
     dad: "500",
   },
   {
     id: 5,
     gambar: Proyek5,
-    nama: "Sistem Informasi Monitoring Manpower Status - 2024",
-    desk: "Sistem ini digunakan untuk memantau status karyawan secara lengkap, seperti jenis kelamin, usia, pendidikan, masa kerja, dan golongan. Sistem ini memudahkan HRD mendapatkan informasi Manpower secara cepat",
+    nama: "Sistem Informasi Permohonan Mutasi - 2024",
+    desk: "Sistem ini digunakan untuk mengelola proses permohonan mutasi karyawan secara digital, mulai dari pengajuan, persetujuan, hingga pemantauan status mutasi.",
     tools: ["HTML", "CSS", "Javascript", "PHP", "MySQL"],
     dad: "600",
   },
   {
     id: 6,
     gambar: Proyek6,
-    nama: "Sistem Informasi Pelaporan Ketidaksesuaian Kualitas - 2024",
-    desk: "Sistem ini digunakan untuk membuat laporan ketidaksesuaian part baik dari segi kualitas maupun kuantitas, lengkap dengan proses persetujuan dari atasan.",
+    nama: "Sistem Informasi Monitoring Manpower Status - 2024",
+    desk: "Sistem ini digunakan untuk memantau status karyawan secara lengkap, seperti jenis kelamin, usia, pendidikan, masa kerja, dan golongan. Sistem ini memudahkan HRD mendapatkan informasi Manpower secara cepat",
     tools: ["HTML", "CSS", "Javascript", "PHP", "MySQL"],
     dad: "700",
   },
   {
     id: 7,
     gambar: Proyek7,
-    nama: "Sistem Informasi Multi-User Artikel - 2023",
-    desk: "Sistem untuk membuat, mengelola, dan mempublikasikan artikel oleh banyak pengguna, sehingga setiap pengguna dapat menulis dan mengedit artikelnya sendiri dalam satu platform.",
-    tools: ["HTML", "CSS", "Laravel", "MySQL"],
+    nama: "Sistem Informasi Pelaporan Ketidaksesuaian Kualitas - 2024",
+    desk: "Sistem ini digunakan untuk membuat laporan ketidaksesuaian part baik dari segi kualitas maupun kuantitas, lengkap dengan proses persetujuan dari atasan.",
+    tools: ["HTML", "CSS", "Javascript", "PHP", "MySQL"],
     dad: "800",
   },
-
   {
     id: 8,
     gambar: Proyek8,
-    nama: "Sistem Prediksi Harga Mobil Bekas - 2022",
-    desk: "Sistem ini menggunakan teknik data mining untuk menganalisis data dan memprediksi harga mobil bekas untuk membantu pembeli dan penjual dalam pengambilan keputusan.",
-    tools: ["HTML", "CSS", "Phyton", "Data Mining"],
+    nama: "Sistem Informasi Multi-User Artikel - 2023",
+    desk: "Sistem untuk membuat, mengelola, dan mempublikasikan artikel oleh banyak pengguna, sehingga setiap pengguna dapat menulis dan mengedit artikelnya sendiri dalam satu platform.",
+    tools: ["HTML", "CSS", "Laravel", "MySQL"],
     dad: "900",
   },
+
   {
     id: 9,
     gambar: Proyek9,
-    nama: "UI Design Aplikasi E-Commerce (Mobile) - 2022",
-    desk: "Desain antarmuka untuk aplikasi e-commerce mobile mirip Alfamart Online, fokus pada pengalaman belanja yang intuitif dan navigasi yang mudah di smartphone.",
-    tools: ["UI/UX Design", "Figma"],
+    nama: "Sistem Prediksi Harga Mobil Bekas - 2022",
+    desk: "Sistem ini menggunakan teknik data mining untuk menganalisis data dan memprediksi harga mobil bekas untuk membantu pembeli dan penjual dalam pengambilan keputusan.",
+    tools: ["HTML", "CSS", "Phyton", "Data Mining"],
     dad: "1000",
   },
   {
     id: 10,
     gambar: Proyek10,
+    nama: "UI Design Aplikasi E-Commerce (Mobile) - 2022",
+    desk: "Desain antarmuka untuk aplikasi e-commerce mobile mirip Alfamart Online, fokus pada pengalaman belanja yang intuitif dan navigasi yang mudah di smartphone.",
+    tools: ["UI/UX Design", "Figma"],
+    dad: "1100",
+  },
+  {
+    id: 11,
+    gambar: Proyek11,
     nama: "UI Design Aplikasi Dokter Online (Mobile) - 2022",
     desk: "Desain antarmuka untuk aplikasi konsultasi dokter secara online di mobile, fokus pada kemudahan akses layanan kesehatan.",
     tools: ["UI/UX Design", "Figma"],
-    dad: "1100",
+    dad: "1200",
   },
 ];
