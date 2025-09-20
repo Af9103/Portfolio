@@ -255,3 +255,17 @@ export const listProyek = [
     dad: "1300",
   },
 ];
+
+import Sertif1 from "/assets/sertifikat/dba.jpg";
+import Sertif2 from "/assets/sertifikat/magang.jpg";
+import Sertif3 from "/assets/sertifikat/pemograman_php.jpg";
+import Sertif4 from "/assets/sertifikat/lctai.jpg";
+
+export const listSertifikat = [
+  { id: 1, gambar: Sertif1, nama: "Database Administrator", lembaga: "BNSP", tahun: "2025", dad: "100" },
+  { id: 2, gambar: Sertif2, nama: "Internship Certificate", lembaga: "PT Kayaba Indonesia", tahun: "2025", dad: "200" },
+  { id: 3, gambar: Sertif3, nama: "Pemrograman PHP", lembaga: "Udemy", tahun: "2024", dad: "300" },
+  { id: 4, gambar: Sertif4, nama: "Juara LCTAI", lembaga: "Kabupaten Bekasi", tahun: "2020", dad: "400" },
+];
+
+

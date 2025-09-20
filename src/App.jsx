@@ -1,5 +1,5 @@
 import DataImage from "./data";
-import { listTools, listProyek } from "./data";
+import { listTools, listProyek, listSertifikat } from "./data";
 import Download from "./components/Download";
 
 function App() {
@@ -140,7 +140,7 @@ function App() {
               <ul className="list-disc list-inside mt-3 text-justify text-base sm:text-base md:text-lg lg:text-lg xl:text-xl leading-relaxed opacity-50">
                 <li>Memimpin dan melantik anggota baru, serta mengatur kegiatan organisasi</li>
                 <li>Menyelenggarakan event keagamaan seperti liqo, mabit, latihan hadroh/marawis, dan perayaan hari besar Islam</li>
-                <li>Berpartisipasi dalam kegiatan sosial dan lomba, termasuk juara LCTAI (Cerdas Cermat Islam) Tingkat Kabupaten tahun 2019</li>
+                <li>Berpartisipasi dalam kegiatan sosial dan lomba, termasuk juara LCTAI (Cerdas Cermat Islam) Tingkat Kabupaten tahun 2020</li>
               </ul>
             </div>
           </div>
@@ -198,6 +198,35 @@ function App() {
         </div>
       </div>
       {/* proyek */}
+
+      {/* sertifikat */}
+      <div className="sertifikat mt-22 py-10" id="sertifikat">
+        <h1 className="text-center text-4xl font-bold mb-2" data-aos="fade-up" data-aos-duration="1500">Sertifikat</h1>
+        <p className="text-base/loose text-center opacity-50" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">Beberapa sertifikat yang pernah diraih:</p>
+
+        <div className="sertifikat-box mt-14 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6">
+          {listSertifikat.map((sertif, index) => (
+            <div
+              key={sertif.id}
+              data-aos="fade-up"
+              data-aos-duration="1200"
+              data-aos-delay={index * 200} // otomatis 0, 200, 400, 600
+            >
+              <img
+                src={sertif.gambar}
+                alt={sertif.nama}
+                className="rounded-md mb-4"
+                loading="lazy"
+              />
+              <h2 className="text-lg font-bold">{sertif.nama}</h2>
+              <p className="opacity-70">{sertif.lembaga}</p>
+              <span className="text-sm opacity-50">{sertif.tahun}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+      {/* sertifikat */}
+
 
       {/* kontak */}
       <div className="kontak mt-22 sm:p-10 p-0" id="kontak">
