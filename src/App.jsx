@@ -43,7 +43,6 @@ function App() {
             </div>
           </div>
 
-
           <div className="flex items-center sm:gap-4 gap-2">
             <Download />
             <a href="#proyek" className="bg-zinc-700 p-4 rounded-2xl hover:bg-zinc-600">Proyek Saya <i className="ri-arrow-down-line ri-lg"></i></a>
@@ -58,6 +57,7 @@ function App() {
           className="xl:w-2/3 lg:w-3/4 w-full mx-auto p-7 bg-zinc-800 rounded-lg flex flex-col relative pt-18 md:pt-6"
           data-aos="fade-up"
           data-aos-duration="1000"
+          data-aos-once="true"
         >
           {/* Gambar */}
           <img
@@ -93,18 +93,18 @@ function App() {
 
         {/* pengalaman */}
         <div className="pengalaman mt-22 py-10" id="pengalaman">
-          <h1 className="text-4xl font-bold mb-4 text-center" data-aos="fade-up" data-aos-duration="1000">
+          <h1 className="text-4xl font-bold mb-4 text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
             Pengalaman
           </h1>
-          <p className="text-base/loose text-center mb-10 opacity-50" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+          <p className="text-base/loose text-center mb-10 opacity-50" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">
             Berikut ini pengalaman saya baik di dunia profesional
           </p>
 
           {/* Internship */}
           <div className="internship mt-10 xl:w-3/4 lg:w-4/5 w-full mx-auto grid gap-6">
-            <h2 className="text-2xl font-bold mb-4" data-aos="fade-up" data-aos-duration="1000">Pengalaman Internship</h2>
+            <h2 className="text-2xl font-bold mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Pengalaman Internship</h2>
 
-            <div className="p-6 bg-zinc-800 rounded-lg shadow-lg" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            <div className="p-6 bg-zinc-800 rounded-lg shadow-lg" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-once="true">
               <div className="flex items-center gap-4 mb-3">
                 <img src={DataImage.ImageIntern} alt="Internship" className="w-12 h-12 rounded-md object-cover" loading="lazy" />
                 <h3 className="text-xl font-semibold">PT Kayaba Indonesia – Cikarang, Indonesia</h3>
@@ -121,18 +121,17 @@ function App() {
         </div>
         {/* pengalaman */}
 
-
         <div className="tools mt-22" id="tools">
-          <h1 className="text-4xl/snug font-bold mb-4 text-center" data-aos="fade-up" data-aos-duration="1000">
+          <h1 className="text-4xl/snug font-bold mb-4 text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
             Tools yang dipakai
           </h1>
-          <p className="xl:w-2/5 lg:w-2/4 md:w-2/3 sm:w-3/4 w-full text-base/loose opacity-50 text-center mx-auto" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+          <p className="xl:w-2/5 lg:w-2/4 md:w-2/3 sm:w-3/4 w-full text-base/loose opacity-50 text-center mx-auto" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">
             Berikut ini beberapa tools yang biasa saya pakai
           </p>
           <div className="tools-box mt-14 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
 
             {listTools.map((tool) => (
-              <div className="flex items-center gap-2 p-3 border border-zinc-600 rounded-md hover:bg-zinc-800 group" key={tool.id} data-aos="fade-up" data-aos-duration="1000" data-aos-delay={tool.dad}>
+              <div className="flex items-center gap-2 p-3 border border-zinc-600 rounded-md hover:bg-zinc-800 group" key={tool.id} data-aos="fade-up" data-aos-duration="1000" data-aos-delay={tool.dad} data-aos-once="true">
                 <img src={tool.gambar} alt="Tools Image" className="w-14 bg-zinc-800 p-1 group hover:bg-zinc-900" loading="lazy" />
                 <div>
                   <h4 className="font-bold">{tool.nama}</h4>
@@ -148,11 +147,11 @@ function App() {
 
       {/* proyek */}
       <div className="proyek mt-22 py-10" id="proyek">
-        <h1 className="text-center text-4xl font-bold mb-2" data-aos="fade-up" data-aos-duration="1000">Proyek</h1>
-        <p className="text-base/loose text-center opacity-50" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Berikut ini beberapa proyek yang telah saya buat:</p>
+        <h1 className="text-center text-4xl font-bold mb-2" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Proyek</h1>
+        <p className="text-base/loose text-center opacity-50" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">Berikut ini beberapa proyek yang telah saya buat:</p>
         <div className="proyek-box mt-14 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
           {listProyek.map((proyek) => (
-            <div key={proyek.id} className="p-4 bg-zinc-800 rounded-md overflow-visible group" data-aos="fade-up" data-aos-duration="1000" data-aos-delay={proyek.dad}>
+            <div key={proyek.id} className="p-4 bg-zinc-800 rounded-md overflow-visible group" data-aos="fade-up" data-aos-duration="1000" data-aos-delay={proyek.dad} data-aos-once="true">
               <img src={proyek.gambar} alt="proyek image" loading="lazy" />
               <div>
                 <h1 className="text-xl font-bold my-4">{proyek.nama}</h1>
@@ -163,9 +162,6 @@ function App() {
                   ))}
                 </div>
               </div>
-              {/* <div className="mt-8 text-center">
-                <a href="#" className="bg-violet-700 p-3 rounded-lg block border border-zinc-600 hover:bg-violet-600">Lihat website</a>
-              </div> */}
             </div>
           ))}
         </div>
@@ -174,8 +170,8 @@ function App() {
 
       {/* sertifikat */}
       <div className="sertifikat mt-22 py-10" id="sertifikat">
-        <h1 className="text-center text-4xl font-bold mb-2" data-aos="fade-up" data-aos-duration="1500">Sertifikat</h1>
-        <p className="text-base/loose text-center opacity-50" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">Beberapa sertifikat yang pernah diraih:</p>
+        <h1 className="text-center text-4xl font-bold mb-2" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">Sertifikat</h1>
+        <p className="text-base/loose text-center opacity-50" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400" data-aos-once="true">Beberapa sertifikat yang pernah diraih:</p>
 
         <div className="sertifikat-box mt-14 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6">
           {listSertifikat.map((sertif, index) => (
@@ -183,7 +179,8 @@ function App() {
               key={sertif.id}
               data-aos="fade-up"
               data-aos-duration="1200"
-              data-aos-delay={index * 200} // otomatis 0, 200, 400, 600
+              data-aos-delay={index * 200}
+              data-aos-once="true"
             >
               <img
                 src={sertif.gambar}
@@ -200,12 +197,11 @@ function App() {
       </div>
       {/* sertifikat */}
 
-
       {/* kontak */}
       <div className="kontak mt-22 sm:p-10 p-0" id="kontak">
-        <h1 className="text-4xl mb-2 font-bold text-center" data-aos="fade-up" data-aos-duration="1000">Kontak</h1>
-        <p className="text-base/loose text-center mb-10 opacity-50" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Mari terhubung dengan saya</p>
-        <form action="https://formsubmit.co/albinf341@gmail.com" method="POST" className="bg-zinc-800 p-10 sm:w-fit w-full mx-auto rounded-md" autoComplete="off" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+        <h1 className="text-4xl mb-2 font-bold text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Kontak</h1>
+        <p className="text-base/loose text-center mb-10 opacity-50" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">Mari terhubung dengan saya</p>
+        <form action="https://formsubmit.co/albinf341@gmail.com" method="POST" className="bg-zinc-800 p-10 sm:w-fit w-full mx-auto rounded-md" autoComplete="off" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" data-aos-once="true">
           <div className="flex flex-col gap-6">
             <div className="flex flex-col gap-2">
               <label className="font-semibold">Nama lengkap</label>
@@ -231,4 +227,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
