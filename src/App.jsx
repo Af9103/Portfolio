@@ -52,16 +52,43 @@ function App() {
         <img src={DataImage.HeroImage} alt="Hero Image" className='w-[500px] md:ml-auto animate__animated animate__fadeInUp animate__delay-2s' loading="lazy" />
       </div>
 
-      {/* tentang */}
+      {/* Tentang */}
       <div className="tentang mt-32 py-10" id="tentang">
-        <div className="xl:w-2/3 lg:w-3/4 w-full mx-auto p-7 bg-zinc-800 rounded-lg" data-aos="fade-up" data-aos-duration="1000">
-          <p className="text-sm sm:text-base md:text-lg leading-relaxed text-justify mb-5">
-            Saya adalah lulusan Program Studi Sistem Informasi Industri Otomotif di Politeknik STMI Jakarta yang memiliki pengalaman Internship sebagai Full Stack Web Developer selama satu tahun. Terampil dalam membangun aplikasi web menggunakan PHP Native maupun Framework Laravel, serta menguasai JavaScript. Memiliki kemampuan dalam UI/UX Design, manajemen basis data, analisis sistem, serta pemodelan sistem menggunakan Use Case, Activity, dan Sequence Diagram, termasuk desain serta pemodelan database.
+        <div
+          className="xl:w-2/3 lg:w-3/4 w-full mx-auto p-7 bg-zinc-800 rounded-lg flex flex-col relative pt-18 md:pt-6"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          {/* Gambar */}
+          <img
+            src={DataImage.ImageKecil}
+            alt="Hero Image"
+            className="w-10 rounded-md absolute top-4 left-4 md:top-auto md:bottom-4"
+            loading="lazy"
+          />
+
+          <p className="text-base sm:text-lg opacity-70 text-justify mb-4">
+            Lulusan Sistem Informasi Industri Otomotif dengan pengalaman Internship 1 tahun sebagai Full Stack Web Developer. Terampil di PHP, Laravel, JavaScript, database design, dan UI/UX.
+          </p>
+          <p className="text-base sm:text-lg opacity-70 text-justify">
+            Pernah memimpin organisasi mahasiswa, mengasah kemampuan kepemimpinan dan manajemen tim.
           </p>
 
-          <p className="text-sm sm:text-base md:text-lg leading-relaxed text-justify">
-            Selain pengalaman akademis dan profesional, saya pernah menjabat sebagai Kepala Divisi PSDM HIMASIS dan Ketua Umum Rohis SMAN 4 Tambun Selatan, yang memperkuat kemampuan saya dalam kepemimpinan, manajemen tim, serta pengembangan sumber daya manusia.
-          </p>
+          {/* Bagian kanan bawah */}
+          <div className="flex gap-8 mt-10 md:mt-auto justify-end">
+            <div className="text-center">
+              <p className="text-3xl font-bold opacity-70">
+                10 <span className="text-blue-500">+</span>
+              </p>
+              <p className="text-sm opacity-70">Proyek Selesai</p>
+            </div>
+            <div className="text-center">
+              <p className="text-3xl font-bold opacity-70">
+                1 <span className="text-blue-500">+</span>
+              </p>
+              <p className="text-sm opacity-70">Tahun Pengalaman</p>
+            </div>
+          </div>
         </div>
 
         {/* pengalaman */}
@@ -70,7 +97,7 @@ function App() {
             Pengalaman
           </h1>
           <p className="text-base/loose text-center mb-10 opacity-50" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-            Berikut ini pengalaman saya baik di dunia profesional maupun organisasi
+            Berikut ini pengalaman saya baik di dunia profesional
           </p>
 
           {/* Internship */}
@@ -84,63 +111,9 @@ function App() {
               </div>
               <span className="text-sm opacity-50">Feb 2024 – Jan 2025 | Full Stack Web Developer</span>
               <ul className="list-disc list-inside mt-3 text-justify text-base sm:text-base md:text-lg lg:text-lg xl:text-xl leading-relaxed opacity-70">
-                <li>Mengembangkan Sistem Informasi Berbasis Web (Full Stack Developer)</li>
-                <li>Melakukan review mingguan bersama pengguna untuk mengevaluasi progres dan menyesuaikan fitur sistem sesuai kebutuhan</li>
-                <li>Melaksanakan sosialisasi sistem kepada end user melalui presentasi</li>
-                <li>Membuat panduan penggunaan dalam bentuk dokumentasi PDF dan video tutorial untuk membantu pengguna memahami dan mengoperasikan sistem dengan efektif</li>
-                <li>Melaksanakan kegiatan stock opname sebagai anggota tim filling, dengan tugas mengelola dan menyusun formulir berdasarkan nomor, serta memastikan kesesuaian data fisik dan sistem</li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Organisasi Kuliah */}
-          <div className="organisasi mt-16 xl:w-3/4 lg:w-4/5 w-full mx-auto grid gap-6">
-            <h2 className="text-2xl font-bold mb-4" data-aos="fade-up" data-aos-duration="1000">Pengalaman Organisasi</h2>
-
-            {/* Kepala Divisi */}
-            <div className="p-6 bg-zinc-800 rounded-lg shadow-lg" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-              <div className="flex items-center gap-4 mb-3">
-                <img src={DataImage.ImageOrg} alt="Organisasi" className="w-12 h-12 rounded-md object-cover" loading="lazy" />
-                <h3 className="text-xl font-semibold">Himpunan Mahasiswa Sistem Informasi (HIMASIS) – Jakarta, Indonesia</h3>
-              </div>
-              <span className="text-sm opacity-50">Feb 2024 – Feb 2025 | Kepala Divisi – Pengembangan Sumber Daya Manusia</span>
-              <ul className="list-disc list-inside mt-3 text-justify text-base sm:text-base md:text-lg lg:text-lg xl:text-xl leading-relaxed opacity-70">
-                <li>Memimpin proses rekrutmen anggota baru</li>
-                <li>Berhasil melaksanakan program magang untuk calon penerus HIMASIS, dengan 70% peserta magang menjadi anggota tetap</li>
-                <li>Menyelenggarakan acara Buka Puasa Bersama anggota dan alumni, serta memimpin program sosial “HIMASIS Berbagi” untuk mendukung masyarakat sekitar selama bulan Ramadan</li>
-                <li>Mengevaluasi kinerja anggota melalui laporan penilaian terstruktur, yang berkontribusi pada peningkatan efektivitas organisasi</li>
-                <li>Melaksanakan fungsi perencanaan, pengorganisasian, pelaksanaan, dan pengawasan seluruh kegiatan di Divisi Pengembangan Sumber Daya Manusia</li>
-              </ul>
-            </div>
-
-            {/* Staff Divisi Kewirausahaan */}
-            <div className="p-6 bg-zinc-800 rounded-lg shadow-lg" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-              <div className="flex items-center gap-4 mb-3">
-                <img src={DataImage.ImageOrg1} alt="Organisasi" className="w-12 h-12 rounded-md object-cover" loading="lazy" />
-                <h3 className="text-xl font-semibold">Himpunan Mahasiswa Sistem Informasi (HIMASIS) – Jakarta, Indonesia</h3>
-              </div>
-              <span className="text-sm opacity-50">Mar 2023 – Feb 2024 | Staff – Divisi Kewirausahaan</span>
-              <ul className="list-disc list-inside mt-3 text-justify text-base sm:text-base md:text-lg lg:text-lg xl:text-xl leading-relaxed opacity-70">
-                <li>Mendesain pamflet dan materi promosi untuk program kewirausahaan</li>
-                <li>Merencanakan dan menjual produk HIMASIS seperti merchandise dan makanan untuk mendukung kegiatan HIMASIS</li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Organisasi SMA */}
-          <div className="organisasi-sma mt-16 xl:w-3/4 lg:w-4/5 w-full mx-auto grid gap-6">
-            <h2 className="text-2xl font-bold mb-4" data-aos="fade-up" data-aos-duration="1000">Pengalaman Organisasi SMA</h2>
-
-            <div className="p-6 bg-zinc-800 rounded-lg shadow-lg opacity-80" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-              <div className="flex items-center gap-4 mb-3">
-                <img src={DataImage.ImageSMA} alt="Organisasi SMA" className="w-12 h-12 rounded-md object-cover" loading="lazy" />
-                <h3 className="text-xl font-semibold">Rohis SMAN 4 Tambun Selatan – Bekasi, Indonesia</h3>
-              </div>
-              <span className="text-sm opacity-50">2018 – 2020 | Ketua Umum & Staff Humas</span>
-              <ul className="list-disc list-inside mt-3 text-justify text-base sm:text-base md:text-lg lg:text-lg xl:text-xl leading-relaxed opacity-50">
-                <li>Memimpin dan melantik anggota baru, serta mengatur kegiatan organisasi</li>
-                <li>Menyelenggarakan event keagamaan seperti liqo, mabit, latihan hadroh/marawis, dan perayaan hari besar Islam</li>
-                <li>Berpartisipasi dalam kegiatan sosial dan lomba, termasuk juara LCTAI (Cerdas Cermat Islam) Tingkat Kabupaten tahun 2020</li>
+                <li>Mengembangkan aplikasi web (Full Stack)</li>
+                <li>Membuat dokumentasi & tutorial</li>
+                <li>Koordinasi tim & presentasi sistem</li>
               </ul>
             </div>
           </div>
@@ -170,7 +143,7 @@ function App() {
 
           </div>
         </div>
-      </div>
+      </div >
       {/* tentang */}
 
       {/* proyek */}
